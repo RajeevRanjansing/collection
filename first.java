@@ -30,12 +30,31 @@ class first{
         name.add("Akash");
         name.add("Amit");
         name.add("Rajeev");
-        
+
+        //To find the size
       System.out.println(name.size());     //output=4    
 
+        //to check the element
        System.out.println(name.contains("Rajeev"));    //output=true
 
+        //To check is it empty or not
         System.out.println(name.isEmpty());        //output=false
+
+        //Is used to clear all the element
+        System.out.println(name.clear());            //output=[]
+
+        //add value to that index
+        name.add(1,Aman);
+        System.out.println(name);        //output=[Rajeev,Aman,Akash,Amit,Rajeev]
+
+        //replace the value
+        name.set(1,Akash);
+        System.out.println(name);        //output=[Rajeev,Aman,Akash,Amit,Rajeev]
         
      }
 }
+
+
+//3rd program
+
+
