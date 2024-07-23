@@ -10,7 +10,7 @@ class first{
         name.add("Rajeev");
         
       System.out.println(name);            //output=[Rajeev,Akash,Amit,Rajeev]
-      System.out.println(name.remove("Rajeev"));      //output=[Akash,Amit]
+      System.out.println(name.remove("Rajeev"));      //output=[Akash,Amit,Rajeev]
         //un-type safe means we can put string and integer etc
     }
 }
