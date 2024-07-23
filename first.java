@@ -31,7 +31,11 @@ class first{
         name.add("Amit");
         name.add("Rajeev");
         
-      System.out.println(name.size());     //output=4           
+      System.out.println(name.size());     //output=4    
+
+       System.out.println(name.contains("Rajeev"));    //output=true
+
+        System.out.println(name.isEmpty());        //output=false
         
      }
 }
