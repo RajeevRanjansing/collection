@@ -57,4 +57,58 @@ class first{
 
 //3rd program
 
+import java.util.*;
+class first{
+    public static void main(String args[]){
+        Vector<String>a=new Vector<>();
+        a.add("Rajeev");
+        System.out.println(a);
+
+        LinkedList <String> a=new LinkedList<>();
+        a.add("Rajeev");
+        System.out.println(a);
+    
+    HashSet<Double> b=new HashSet<>();
+    b.add(1.1);
+    b.add(4.4);
+    b.add(7.7);
+    System.out.println(b);
+    
+
+    TreeSet<Double> c=new TreeSet<>();
+    c.add(6.2);
+    c.add(2.3);
+    c.add(4.5);
+    System.out.println(c);      //By default it arrange the data in ascending order
+    
+    
+    TreeSet<String> c=new TreeSet<>();
+    c.add("Aman");
+    c.add("vinay");
+    c.add("Rajeev");
+    System.out.println(c);       //output=[Aman,Rajeev,vinay]  
+
+    ArrayList<String>name=new ArrayList<>();
+    name.add("Rajeev");
+    name.add("Akshat");
+    name.add("Akash");
+    name.add("Aman");
+    // System.out.println(name);
+
+    for(String str:name){
+        System.out.print(str + "\t" + str.length() + "\t");
+        StringBuffer sb=new StringBuffer(str);
+        System.out.println(sb.reverse());
+    
+    //output=           Rajeev  6       veejaR
+                        Akshat  6       tahskA
+                        Akash   5       hsakA
+                        Aman    4       namA
+    
+    
+    }
+
+    
+    }
+}
 
