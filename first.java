@@ -112,3 +112,48 @@ class first{
     }
 }
 
+//4th program
+
+import java.util.*;
+class first{
+    public static void main(String args[]){
+        ArrayList<String>a=new ArrayList<>();
+        a.add("Ram");
+        a.add("Shyam");
+        a.add("Sita");
+        a.add("Rohan");
+
+        //Traversing using iterator: Forward Traversing
+        
+        Iterator<String>b=a.iterator();
+        while(b.hasNext()){
+            String c=b.next();
+            //System.out.println(c);        //output=Ram,Shyam,Sita,Rohan
+        }
+        //Backward Traversal of collection LISTITERATOR
+
+            ListIterator<String>d=a.listIterator(a.size());
+            while(d.hasPrevious()){
+                String e=d.previous();
+               // System.out.println(e);      //output=Rohan,Sita,Shyam,Ram
+            }
+
+            // --------***************************--------
+
+            //for each method
+
+            a.forEach(e->{
+               // System.out.println(e);
+            });
+
+            TreeSet<String>i=new TreeSet<>();
+            i.addAll(a);
+            i.forEach(e->{
+               // System.out.println(e);
+            });
+
+            
+        }
+    }
+
+
